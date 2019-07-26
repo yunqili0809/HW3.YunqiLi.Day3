@@ -1,17 +1,13 @@
 import javax.swing.ImageIcon
 
-open class Animal(){
-    open val image =""
-    open val food = ""
-    open val habitat = ""
+abstract class Animal(){
+    abstract val image : String
+    abstract val food :String
+    abstract val habitat: String
     val hunger = 10
 
-    open fun makeNoise(){
-        println("The Animal is making noise")
-    }
-    open fun eat(){
-        println("The Animal is eating")
-    }
+    abstract fun makeNoise()
+    abstract fun eat()
     open fun roam(){
         println("The Animal is roaming")
     }
